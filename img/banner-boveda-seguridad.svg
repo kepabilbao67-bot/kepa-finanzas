@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" role="img" aria-label="Banner de bóveda de seguridad con oro y plata custodiados">
+  <defs>
+    <linearGradient id="bnbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/><stop offset="0.5" stop-color="#1e293b"/><stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="bnspot" cx="30%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#334155" stop-opacity="0.9"/><stop offset="1" stop-color="#0b1220" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bnGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="0.45" stop-color="#f5c518"/><stop offset="1" stop-color="#b8860b"/></linearGradient>
+    <linearGradient id="bnGoldTop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff3c4"/><stop offset="1" stop-color="#f5c518"/></linearGradient>
+    <linearGradient id="bnGoldSide" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e0a80d"/><stop offset="1" stop-color="#946a06"/></linearGradient>
+    <linearGradient id="bnSilver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="0.45" stop-color="#cbd5e1"/><stop offset="1" stop-color="#94a3b8"/></linearGradient>
+    <linearGradient id="bnSilverTop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#cbd5e1"/></linearGradient>
+    <linearGradient id="bnSilverSide" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b4bfcc"/><stop offset="1" stop-color="#6b7686"/></linearGradient>
+    <linearGradient id="bnText" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff3c4"/><stop offset="1" stop-color="#f5c518"/></linearGradient>
+    <linearGradient id="bnShield" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+    <radialGradient id="bnGlow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#f5c518" stop-opacity="0.35"/><stop offset="1" stop-color="#f5c518" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <rect width="1280" height="420" fill="url(#bnbg)"/>
+  <rect width="1280" height="420" fill="url(#bnspot)"/>
+
+  <!-- Texto -->
+  <g transform="translate(90,150)">
+    <text x="0" y="0" font-family="Poppins, Arial, sans-serif" font-size="46" font-weight="800" fill="#ffffff">Tu patrimonio,</text>
+    <text x="0" y="58" font-family="Poppins, Arial, sans-serif" font-size="46" font-weight="800" fill="url(#bnText)">oro y plata seguros</text>
+    <text x="2" y="104" font-family="Inter, Arial, sans-serif" font-size="20" fill="#94a3b8">Custodia certificada · Bóveda vigilada 24/7</text>
+    <g transform="translate(0,128)">
+      <rect x="0" y="0" width="186" height="44" rx="22" fill="url(#bnShield)"/>
+      <text x="93" y="29" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">Conoce más</text>
+    </g>
+  </g>
+
+  <!-- Bóveda + lingotes a la derecha -->
+  <g transform="translate(820,40)">
+    <!-- circulo bóveda -->
+    <circle cx="200" cy="170" r="150" fill="#222a36" stroke="#3a4250" stroke-width="14"/>
+    <circle cx="200" cy="170" r="120" fill="#2b3543" stroke="#475569" stroke-width="6"/>
+    <g stroke="#64748b" stroke-width="8" stroke-linecap="round">
+      <line x1="200" y1="50" x2="200" y2="86"/><line x1="200" y1="254" x2="200" y2="290"/>
+      <line x1="80" y1="170" x2="116" y2="170"/><line x1="284" y1="170" x2="320" y2="170"/>
+      <line x1="115" y1="85" x2="140" y2="110"/><line x1="260" y1="230" x2="285" y2="255"/>
+      <line x1="285" y1="85" x2="260" y2="110"/><line x1="140" y1="230" x2="115" y2="255"/>
+    </g>
+    <circle cx="200" cy="170" r="34" fill="#475569" stroke="#222a36" stroke-width="6"/>
+    <circle cx="200" cy="170" r="14" fill="#94a3b8"/>
+
+    <!-- escudo -->
+    <g transform="translate(312,70)">
+      <path d="M0,-22 L26,-13 L26,10 C26,26 14,37 0,42 C-14,37 -26,26 -26,10 L-26,-13 Z" fill="url(#bnShield)" stroke="#0b1220" stroke-width="2"/>
+      <path d="M-11,6 L-2,15 L14,-7" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- lingotes en primer plano -->
+  <ellipse cx="1000" cy="382" rx="220" ry="26" fill="#000" opacity="0.4"/>
+  <ellipse cx="1000" cy="360" rx="240" ry="60" fill="url(#bnGlow)"/>
+  <g transform="translate(880,330)">
+    <g transform="translate(0,0)"><polygon points="0,26 96,26 84,46 12,46" fill="url(#bnSilverSide)"/><polygon points="0,26 12,12 108,12 96,26" fill="url(#bnSilverTop)"/><polygon points="96,26 108,12 108,32 96,46" fill="url(#bnSilver)"/></g>
+    <g transform="translate(108,0)"><polygon points="0,26 110,26 96,46 14,46" fill="url(#bnGoldSide)"/><polygon points="0,26 14,12 124,12 110,26" fill="url(#bnGoldTop)"/><polygon points="110,26 124,12 124,32 110,46" fill="url(#bnGold)"/></g>
+    <g transform="translate(52,-30)"><polygon points="0,26 110,26 96,46 14,46" fill="url(#bnGoldSide)"/><polygon points="0,26 14,12 124,12 110,26" fill="url(#bnGoldTop)"/><polygon points="110,26 124,12 124,32 110,46" fill="url(#bnGold)"/></g>
+  </g>
+
+  <g fill="#ffffff" opacity="0.9">
+    <path d="M1020 60 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z"/>
+    <path d="M905 300 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/>
+  </g>
+</svg>

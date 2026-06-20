@@ -1,0 +1,12 @@
+# OS / editores
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Config interna de Kiro
+.kiro/

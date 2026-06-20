@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" width="700" height="520" role="img" aria-label="Lingotes de oro y plata apilados en primer plano">
+  <defs>
+    <radialGradient id="bgc" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#27354a"/><stop offset="1" stop-color="#0b1220"/>
+    </radialGradient>
+    <linearGradient id="g_gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fde68a"/><stop offset="0.45" stop-color="#f5c518"/><stop offset="1" stop-color="#b8860b"/></linearGradient>
+    <linearGradient id="g_goldTop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff3c4"/><stop offset="1" stop-color="#f5c518"/></linearGradient>
+    <linearGradient id="g_goldSide" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e0a80d"/><stop offset="1" stop-color="#946a06"/></linearGradient>
+    <linearGradient id="g_silver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1f5f9"/><stop offset="0.45" stop-color="#cbd5e1"/><stop offset="1" stop-color="#94a3b8"/></linearGradient>
+    <linearGradient id="g_silverTop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#cbd5e1"/></linearGradient>
+    <linearGradient id="g_silverSide" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b4bfcc"/><stop offset="1" stop-color="#6b7686"/></linearGradient>
+    <radialGradient id="g_glow" cx="50%" cy="55%" r="55%"><stop offset="0" stop-color="#f5c518" stop-opacity="0.35"/><stop offset="1" stop-color="#f5c518" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <rect width="700" height="520" fill="url(#bgc)"/>
+  <ellipse cx="350" cy="360" rx="320" ry="120" fill="url(#g_glow)"/>
+  <ellipse cx="350" cy="430" rx="260" ry="40" fill="#000" opacity="0.4"/>
+
+  <!-- Plata atras -->
+  <g transform="translate(120,300)">
+    <g transform="translate(0,0)"><polygon points="0,40 150,40 128,74 22,74" fill="url(#g_silverSide)"/><polygon points="0,40 22,14 172,14 150,40" fill="url(#g_silverTop)"/><polygon points="150,40 172,14 172,48 150,74" fill="url(#g_silver)"/></g>
+    <g transform="translate(28,-36)"><polygon points="0,40 150,40 128,74 22,74" fill="url(#g_silverSide)"/><polygon points="0,40 22,14 172,14 150,40" fill="url(#g_silverTop)"/><polygon points="150,40 172,14 172,48 150,74" fill="url(#g_silver)"/><text x="75" y="62" font-family="Arial" font-size="15" font-weight="bold" fill="#64748b" text-anchor="middle">AG 999</text></g>
+  </g>
+
+  <!-- Oro frente (piramide) -->
+  <g transform="translate(300,300)">
+    <g transform="translate(-60,60)"><polygon points="0,40 160,40 138,76 22,76" fill="url(#g_goldSide)"/><polygon points="0,40 22,12 182,12 160,40" fill="url(#g_goldTop)"/><polygon points="160,40 182,12 182,48 160,76" fill="url(#g_gold)"/></g>
+    <g transform="translate(120,60)"><polygon points="0,40 160,40 138,76 22,76" fill="url(#g_goldSide)"/><polygon points="0,40 22,12 182,12 160,40" fill="url(#g_goldTop)"/><polygon points="160,40 182,12 182,48 160,76" fill="url(#g_gold)"/></g>
+    <g transform="translate(30,8)"><polygon points="0,40 160,40 138,76 22,76" fill="url(#g_goldSide)"/><polygon points="0,40 22,12 182,12 160,40" fill="url(#g_goldTop)"/><polygon points="160,40 182,12 182,48 160,76" fill="url(#g_gold)"/><text x="90" y="64" font-family="Arial" font-size="17" font-weight="bold" fill="#946a06" text-anchor="middle">AU 9999</text></g>
+  </g>
+
+  <g fill="#ffffff" opacity="0.95">
+    <path d="M150 280 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 z"/>
+    <path d="M470 250 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z"/>
+    <path d="M360 300 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/>
+  </g>
+</svg>
