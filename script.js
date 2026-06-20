@@ -147,7 +147,51 @@ const BASE_CONOCIMIENTO = [
     respuesta: 'Puedes escribirnos por WhatsApp ahora mismo y te atendemos personalmente. 👉 Pulsa el botón verde de WhatsApp o usa el formulario de contacto de la página.'
   },
   {
-    claves: ['gracias', 'muchas gracias', 'perfecto', 'genial', 'ok', 'vale'],
+    claves: ['minimo', 'mínimo', 'cuanto necesito', 'con cuanto empiezo', 'cantidad minima', 'poco dinero', 'empezar con poco'],
+    respuesta: 'Puedes empezar con distintos importes según el plan que elijas. Tenemos opciones para presupuestos pequeños y grandes. Dinos cuánto tienes pensado invertir y te decimos el plan que mejor encaja. 💬'
+  },
+  {
+    claves: ['pureza', 'quilates', 'kilataje', 'calidad', '9999', '999', 'autentico', 'auténtico'],
+    respuesta: 'Trabajamos con oro de pureza 9999 (24 quilates) y plata 999, los estándares más altos del mercado. Es metal auténtico y certificado. ✅'
+  },
+  {
+    claves: ['impuestos', 'impuesto', 'iva', 'hacienda', 'fiscal', 'tributa', 'declarar'],
+    respuesta: 'La fiscalidad depende de tu país y de tu situación personal. El oro de inversión suele tener un tratamiento fiscal especial. Para tu caso concreto, te recomendamos hablar con nuestro equipo por WhatsApp y, si hace falta, con un asesor fiscal.'
+  },
+  {
+    claves: ['entrega', 'recibir', 'me lo dan', 'envio', 'envío', 'casa', 'fisico en mano', 'físico en mano', 'llevar'],
+    respuesta: 'Puedes mantener tu metal en nuestra custodia segura o coordinar su disposición cuando lo necesites. Las opciones de entrega se gestionan de forma personalizada. Consúltanos por WhatsApp. 📦'
+  },
+  {
+    claves: ['seguro', 'asegurado', 'robo', 'incendio', 'que pasa si'],
+    respuesta: 'El metal en custodia se guarda en bóveda blindada con vigilancia 24/7 y medidas de seguridad. Si quieres detalles sobre coberturas y garantías de tu caso, te lo explicamos por WhatsApp.'
+  },
+  {
+    claves: ['precio del oro', 'cotizacion', 'cotización', 'cuanto vale el oro', 'valor del oro', 'sube', 'baja'],
+    respuesta: 'El precio del oro y la plata varía cada día según el mercado internacional. Te informamos del precio actualizado en el momento de tu compra. Escríbenos por WhatsApp para conocer la cotización del día. 📈'
+  },
+  {
+    claves: ['como ser partner', 'pasos partner', 'empezar partner', 'unirme', 'darme de alta', 'registrarme'],
+    respuesta: 'Hacerte partner es fácil: 1) nos escribes y te damos de alta, 2) recibes tu material y apoyo, 3) recomiendas KepaFinanzas y 4) cobras tus comisiones en oro. Sin inversión obligatoria para empezar. ¿Te apuntas? Escríbenos por WhatsApp. 🤝'
+  },
+  {
+    claves: ['cuanto gano', 'cuanto se gana', 'ganancia partner', 'porcentaje', 'cuanto pagan'],
+    respuesta: 'Las comisiones de partner dependen de las operaciones que generes y se pagan en oro. Te explicamos las condiciones concretas de forma personalizada por WhatsApp. 💛'
+  },
+  {
+    claves: ['pago', 'pagar', 'transferencia', 'tarjeta', 'metodos de pago', 'métodos de pago', 'como pago'],
+    respuesta: 'Te indicamos las formas de pago disponibles al elegir tu plan. Para darte los detalles según tu país, lo mejor es que hablemos por WhatsApp. 💳'
+  },
+  {
+    claves: ['por que kepafinanzas', 'porque vosotros', 'por que ustedes', 'que os diferencia', 'ventajas'],
+    respuesta: 'En KepaFinanzas combinamos metal físico real, custodia segura, acompañamiento cercano sin tecnicismos y la posibilidad de ganar comisiones en oro como partner. Estamos para ayudarte en cada paso. 🪙'
+  },
+  {
+    claves: ['ubicacion', 'ubicación', 'donde estais', 'donde están', 'oficina', 'pais', 'país', 'ciudad'],
+    respuesta: 'Atendemos de forma online y por WhatsApp para que puedas invertir desde donde estés. Si necesitas saber detalles concretos, escríbenos y te informamos.'
+  },
+  {
+    claves: ['gracias', 'muchas gracias', 'perfecto', 'genial', 'ok', 'vale', 'adios', 'adiós', 'hasta luego'],
     respuesta: '¡Un placer! 😊 Si tienes más dudas sobre oro, plata o cómo invertir, aquí estoy. Y recuerda que puedes hablar con una persona por WhatsApp cuando quieras.'
   }
 ];
