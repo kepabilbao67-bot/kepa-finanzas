@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kepa Tecnología - Soluciones tecnológicas, desarrollo de software, infraestructura y consultoría IT para impulsar tu negocio." />
-  <title>Kepa Tecnología | Soluciones tecnológicas a tu medida</title>
+  <meta name="description" content="KepaFinanzas - Compra y custodia de metales preciosos: oro y plata. Invierte de forma segura o conviértete en partner y cobra comisiones en oro." />
+  <title>KepaFinanzas | Inversión y custodia de oro y plata</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,20 +15,20 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#inicio" class="brand">
-        <span class="brand__mark">K</span>
-        <span class="brand__text">Kepa<strong>Tecnología</strong></span>
+        <img src="img/lingote-oro-icono.svg" alt="Lingote de oro" class="brand__img" />
+        <span class="brand__text">Kepa<strong>Finanzas</strong></span>
       </a>
 
       <nav class="nav" id="nav">
         <ul class="nav__list">
           <li><a href="#inicio" class="nav__link">Inicio</a></li>
-          <li><a href="#servicios" class="nav__link">Servicios</a></li>
-          <li><a href="#custodia" class="nav__link">Custodia</a></li>
-          <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
-          <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+          <li><a href="#metales" class="nav__link">Metales</a></li>
+          <li><a href="#planes" class="nav__link">Planes</a></li>
+          <li><a href="#invertir" class="nav__link">Invertir</a></li>
+          <li><a href="#partner" class="nav__link">Partner</a></li>
           <li><a href="#contacto" class="nav__link">Contacto</a></li>
         </ul>
-        <a href="#contacto" class="btn btn--primary nav__cta">Cotizar proyecto</a>
+        <a href="#contacto" class="btn btn--gold nav__cta">Empieza ahora</a>
       </nav>
 
       <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
@@ -41,192 +41,208 @@
   <section class="hero" id="inicio">
     <div class="container hero__inner">
       <div class="hero__content">
-        <span class="badge">Innovación · Tecnología · Resultados</span>
-        <h1 class="hero__title">Transformamos ideas en <span class="gradient-text">soluciones digitales</span></h1>
+        <span class="badge">Oro &amp; Plata · Inversión segura · Custodia certificada</span>
+        <h1 class="hero__title">
+          Invierte en <span class="gold-text">oro</span> y <span class="silver-text">plata</span> con total seguridad
+        </h1>
         <p class="hero__text">
-          En Kepa Tecnología diseñamos, desarrollamos e implementamos soluciones tecnológicas
-          a la medida de tu empresa. Software, infraestructura y consultoría para llevar tu
-          negocio al siguiente nivel.
+          En <strong>KepaFinanzas</strong> compras metales preciosos y los mantenemos
+          resguardados en bóveda vigilada. Protege tu patrimonio con un activo que
+          nunca pasa de moda.
         </p>
         <div class="hero__actions">
-          <a href="#contacto" class="btn btn--primary">Comienza ahora</a>
-          <a href="#servicios" class="btn btn--ghost">Ver servicios</a>
+          <a href="#planes" class="btn btn--gold">Ver planes de compra</a>
+          <a href="#partner" class="btn btn--ghost">Ser partner</a>
         </div>
         <div class="hero__stats">
-          <div class="stat"><strong data-count="120">0</strong><span>Proyectos entregados</span></div>
-          <div class="stat"><strong data-count="98">0</strong><span>% Clientes satisfechos</span></div>
-          <div class="stat"><strong data-count="10">0</strong><span>Años de experiencia</span></div>
+          <div class="stat"><strong>100%</strong><span>Metal físico real</span></div>
+          <div class="stat"><strong>24/7</strong><span>Bóveda vigilada</span></div>
+          <div class="stat"><strong>Au · Ag</strong><span>Oro y plata pura</span></div>
         </div>
       </div>
       <div class="hero__visual">
-        <div class="hero__card">
-          <div class="hero__card-dots"><span></span><span></span><span></span></div>
-          <pre class="hero__code"><code>&lt;kepa&gt;
-  solución = <span class="t-key">build</span>(
-    idea,
-    <span class="t-str">"tecnología"</span>,
-    impacto
-  );
-  return solución;
-&lt;/kepa&gt;</code></pre>
-        </div>
+        <img src="img/lingotes-oro-plata.svg" alt="Lingotes de oro y plata" class="hero__img" />
         <div class="hero__glow"></div>
       </div>
     </div>
   </section>
 
-  <!-- Servicios -->
-  <section class="section" id="servicios">
+  <!-- Metales / Por qué -->
+  <section class="section" id="metales">
     <div class="container">
       <div class="section__head">
-        <span class="section__eyebrow">Lo que hacemos</span>
-        <h2 class="section__title">Nuestros servicios</h2>
-        <p class="section__sub">Soluciones integrales para cada etapa de tu transformación digital.</p>
+        <span class="section__eyebrow">Por qué metales preciosos</span>
+        <h2 class="section__title">Un valor que perdura en el tiempo</h2>
+        <p class="section__sub">El oro y la plata han protegido el patrimonio de generaciones. Hoy puedes hacerlo tú.</p>
       </div>
 
       <div class="grid grid--3">
         <article class="card">
-          <div class="card__icon">&#128187;</div>
-          <h3>Desarrollo de software</h3>
-          <p>Aplicaciones web y móviles a medida, escalables y seguras, construidas con tecnología moderna.</p>
+          <div class="card__icon">&#127947;</div>
+          <h3>Refugio de valor</h3>
+          <p>El oro conserva su poder adquisitivo frente a la inflación y la incertidumbre económica.</p>
         </article>
         <article class="card">
-          <div class="card__icon">&#9729;</div>
-          <h3>Infraestructura y Cloud</h3>
-          <p>Migración, administración y optimización de servidores y servicios en la nube.</p>
-        </article>
-        <article class="card">
-          <div class="card__icon">&#128202;</div>
-          <h3>Consultoría IT</h3>
-          <p>Asesoría estratégica para que tu tecnología trabaje a favor de los objetivos de tu negocio.</p>
+          <div class="card__icon">&#128176;</div>
+          <h3>Activo físico real</h3>
+          <p>Compras metal auténtico (oro 9999 y plata 999), no papeles ni promesas.</p>
         </article>
         <article class="card">
           <div class="card__icon">&#128274;</div>
-          <h3>Ciberseguridad</h3>
-          <p>Protegemos tus datos y sistemas con auditorías, monitoreo y buenas prácticas de seguridad.</p>
+          <h3>Custodia segura</h3>
+          <p>Tus metales se guardan en bóveda blindada con vigilancia y monitoreo permanente.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">&#128200;</div>
+          <h3>Liquidez global</h3>
+          <p>El oro y la plata se reconocen y valoran en todo el mundo, siempre.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">&#129309;</div>
+          <h3>Acompañamiento</h3>
+          <p>Te guiamos paso a paso en tu inversión, sin tecnicismos ni complicaciones.</p>
         </article>
         <article class="card">
           <div class="card__icon">&#128241;</div>
-          <h3>Diseño UX/UI</h3>
-          <p>Interfaces intuitivas y atractivas centradas en la experiencia de tus usuarios.</p>
-        </article>
-        <article class="card">
-          <div class="card__icon">&#9881;</div>
-          <h3>Soporte técnico</h3>
-          <p>Mantenimiento y soporte continuo para mantener tus sistemas siempre operativos.</p>
+          <h3>Asistente 24/7</h3>
+          <p>Resuelve todas tus dudas sobre metales con nuestro asistente inteligente y por WhatsApp.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Nosotros -->
-  <section class="section section--alt" id="nosotros">
-    <div class="container about">
-      <div class="about__media">
-        <div class="about__img"></div>
-        <div class="about__badge">
-          <strong>+10</strong>
-          <span>años creando tecnología</span>
-        </div>
+  <!-- Custodia -->
+  <section class="section section--dark" id="custodia">
+    <div class="container custody">
+      <div class="custody__media">
+        <img src="img/boveda-custodiada.svg" alt="Bóveda con oro y plata custodiada por guardia y cámaras" loading="lazy" />
       </div>
-      <div class="about__content">
-        <span class="section__eyebrow">Sobre nosotros</span>
-        <h2 class="section__title">Tu socio tecnológico de confianza</h2>
+      <div class="custody__content">
+        <span class="section__eyebrow">Seguridad</span>
+        <h2 class="section__title">Tu oro y plata, siempre protegidos</h2>
         <p>
-          Somos un equipo apasionado por la tecnología y comprometido con el éxito de nuestros
-          clientes. Combinamos experiencia técnica, creatividad y metodologías ágiles para
-          entregar soluciones que generan resultados reales.
+          Resguardamos tus metales en una bóveda blindada con vigilancia las 24 horas,
+          control de acceso y monitoreo en tiempo real. Tú inviertes con tranquilidad;
+          nosotros custodiamos tu patrimonio.
         </p>
         <ul class="checklist">
-          <li>Equipo certificado y multidisciplinario</li>
-          <li>Metodologías ágiles y entregas continuas</li>
-          <li>Acompañamiento de principio a fin</li>
-          <li>Tecnología de vanguardia y código de calidad</li>
+          <li>Bóveda blindada vigilada 24/7</li>
+          <li>Guardias de seguridad y cámaras</li>
+          <li>Custodia con trazabilidad de tu metal</li>
+          <li>Tu inversión respaldada en metal físico</li>
         </ul>
-        <a href="#contacto" class="btn btn--primary">Trabajemos juntos</a>
+        <a href="#planes" class="btn btn--gold">Quiero invertir</a>
       </div>
     </div>
   </section>
 
-  <!-- Custodia segura de metales -->
-  <section class="section" id="custodia">
+  <!-- Planes -->
+  <section class="section" id="planes">
     <div class="container">
       <div class="section__head">
-        <span class="section__eyebrow">Seguridad</span>
-        <h2 class="section__title">Custodia segura de metales</h2>
-        <p class="section__sub">Tu oro y plata resguardados en bóveda vigilada las 24 horas.</p>
+        <span class="section__eyebrow">Planes de compra</span>
+        <h2 class="section__title">Elige tu plan de inversión</h2>
+        <p class="section__sub">6 planes pensados para que empieces a invertir en metales preciosos según tu objetivo.</p>
       </div>
 
-      <div class="custody">
-        <div class="custody__media">
-          <img src="img/boveda-custodiada.svg" alt="Caja fuerte con oro y plata custodiada por un guardia y cámaras de seguridad" loading="lazy" />
-        </div>
-        <div class="custody__content">
-          <h3>Protección de extremo a extremo</h3>
-          <p>
-            Resguardamos tus lingotes de oro y plata en una bóveda blindada con vigilancia
-            permanente, control de acceso y monitoreo en tiempo real. Tu patrimonio, siempre seguro.
-          </p>
-          <ul class="checklist">
-            <li>Bóveda blindada vigilada 24/7</li>
-            <li>Guardias de seguridad certificados</li>
-            <li>Cámaras y monitoreo en tiempo real</li>
-            <li>Custodia y trazabilidad garantizadas</li>
+      <div class="grid grid--3 plans">
+        <article class="plan">
+          <div class="plan__head"><span class="plan__metal">&#129689;</span><h3>Plan 1</h3></div>
+          <p class="plan__desc">Detalles del plan próximamente.</p>
+          <ul class="plan__list">
+            <li>Inversión inicial: por definir</li>
+            <li>Metal: oro / plata</li>
+            <li>Custodia incluida</li>
           </ul>
-          <a href="#contacto" class="btn btn--primary">Quiero proteger mis metales</a>
-        </div>
+          <a href="#contacto" class="btn btn--outline btn--block">Más información</a>
+        </article>
+        <article class="plan plan--featured">
+          <div class="plan__badge">Popular</div>
+          <div class="plan__head"><span class="plan__metal">&#129689;</span><h3>Plan 2</h3></div>
+          <p class="plan__desc">Detalles del plan próximamente.</p>
+          <ul class="plan__list">
+            <li>Inversión inicial: por definir</li>
+            <li>Metal: oro / plata</li>
+            <li>Custodia incluida</li>
+          </ul>
+          <a href="#contacto" class="btn btn--gold btn--block">Más información</a>
+        </article>
+        <article class="plan">
+          <div class="plan__head"><span class="plan__metal">&#129689;</span><h3>Plan 3</h3></div>
+          <p class="plan__desc">Detalles del plan próximamente.</p>
+          <ul class="plan__list">
+            <li>Inversión inicial: por definir</li>
+            <li>Metal: oro / plata</li>
+            <li>Custodia incluida</li>
+          </ul>
+          <a href="#contacto" class="btn btn--outline btn--block">Más información</a>
+        </article>
+        <article class="plan">
+          <div class="plan__head"><span class="plan__metal">&#129689;</span><h3>Plan 4</h3></div>
+          <p class="plan__desc">Detalles del plan próximamente.</p>
+          <ul class="plan__list">
+            <li>Inversión inicial: por definir</li>
+            <li>Metal: oro / plata</li>
+            <li>Custodia incluida</li>
+          </ul>
+          <a href="#contacto" class="btn btn--outline btn--block">Más información</a>
+        </article>
+        <article class="plan">
+          <div class="plan__head"><span class="plan__metal">&#129689;</span><h3>Plan 5</h3></div>
+          <p class="plan__desc">Detalles del plan próximamente.</p>
+          <ul class="plan__list">
+            <li>Inversión inicial: por definir</li>
+            <li>Metal: oro / plata</li>
+            <li>Custodia incluida</li>
+          </ul>
+          <a href="#contacto" class="btn btn--outline btn--block">Más información</a>
+        </article>
+        <article class="plan">
+          <div class="plan__head"><span class="plan__metal">&#129689;</span><h3>Plan 6</h3></div>
+          <p class="plan__desc">Detalles del plan próximamente.</p>
+          <ul class="plan__list">
+            <li>Inversión inicial: por definir</li>
+            <li>Metal: oro / plata</li>
+            <li>Custodia incluida</li>
+          </ul>
+          <a href="#contacto" class="btn btn--outline btn--block">Más información</a>
+        </article>
       </div>
-
-      <div class="custody__gallery">
-        <figure>
-          <img src="img/lingotes-oro-plata.svg" alt="Lingotes de oro y plata apilados" loading="lazy" />
-          <figcaption>Lingotes de oro 9999 y plata 999</figcaption>
-        </figure>
-        <figure>
-          <img src="img/boveda-oro-plata.svg" alt="Caja fuerte con lingotes de oro y plata" loading="lazy" />
-          <figcaption>Caja fuerte con dial de combinación</figcaption>
-        </figure>
-        <figure>
-          <img src="img/banner-boveda-seguridad.svg" alt="Banner de bóveda de seguridad con oro y plata" loading="lazy" />
-          <figcaption>Bóveda certificada y resguardada</figcaption>
-        </figure>
-      </div>
+      <p class="plans__note">¿Aún no sabes cuál elegir? Pregúntale a nuestro asistente o escríbenos por WhatsApp.</p>
     </div>
   </section>
 
-  <!-- Proyectos -->
-  <section class="section section--alt" id="proyectos">
+  <!-- Dos vías: Invertir / Partner -->
+  <section class="section section--dark" id="invertir">
     <div class="container">
       <div class="section__head">
-        <span class="section__eyebrow">Portafolio</span>
-        <h2 class="section__title">Proyectos destacados</h2>
-        <p class="section__sub">Algunos de los retos que hemos resuelto con tecnología.</p>
+        <span class="section__eyebrow">Dos formas de crecer con nosotros</span>
+        <h2 class="section__title">Invierte o convíértete en partner</h2>
+        <p class="section__sub">Elige el camino que mejor se adapte a ti. Puedes hacer ambos.</p>
       </div>
 
-      <div class="grid grid--3">
-        <article class="project">
-          <div class="project__img project__img--1"></div>
-          <div class="project__body">
-            <span class="tag">Web App</span>
-            <h3>Plataforma de gestión empresarial</h3>
-            <p>Sistema ERP a medida para optimizar procesos internos y reportería en tiempo real.</p>
-          </div>
+      <div class="grid grid--2 ways">
+        <article class="way">
+          <div class="way__icon way__icon--gold">&#128176;</div>
+          <h3>Inversor</h3>
+          <p>Compra oro y plata a través de nuestros planes y mantén tu metal custodiado de forma segura. Tu patrimonio crece y queda protegido.</p>
+          <ul class="checklist">
+            <li>Compra metal físico real</li>
+            <li>Custodia segura incluida</li>
+            <li>Acompañamiento personalizado</li>
+          </ul>
+          <a href="#planes" class="btn btn--gold">Quiero invertir</a>
         </article>
-        <article class="project">
-          <div class="project__img project__img--2"></div>
-          <div class="project__body">
-            <span class="tag">E-commerce</span>
-            <h3>Tienda en línea escalable</h3>
-            <p>Comercio electrónico con pagos integrados y panel administrativo completo.</p>
-          </div>
-        </article>
-        <article class="project">
-          <div class="project__img project__img--3"></div>
-          <div class="project__body">
-            <span class="tag">Cloud</span>
-            <h3>Migración a la nube</h3>
-            <p>Infraestructura modernizada con alta disponibilidad y reducción de costos.</p>
-          </div>
+        <article class="way" id="partner">
+          <div class="way__icon way__icon--silver">&#129309;</div>
+          <h3>Partner / Afiliado</h3>
+          <p>Trabaja con nosotros recomendando KepaFinanzas y <strong>cobra tus comisiones en oro</strong>. Una forma de generar ingresos respaldados en metal precioso.</p>
+          <ul class="checklist">
+            <li>Comisiones pagadas en oro</li>
+            <li>Sin inversión obligatoria para empezar</li>
+            <li>Material y apoyo para crecer</li>
+          </ul>
+          <a href="#contacto" class="btn btn--silver">Ser partner</a>
         </article>
       </div>
     </div>
@@ -235,9 +251,12 @@
   <!-- CTA -->
   <section class="cta">
     <div class="container cta__inner">
-      <h2>¿Listo para impulsar tu negocio con tecnología?</h2>
-      <p>Conversemos sobre tu proyecto y diseñemos juntos la mejor solución.</p>
-      <a href="#contacto" class="btn btn--light">Solicitar asesoría gratis</a>
+      <h2>¿Listo para proteger tu futuro con oro y plata?</h2>
+      <p>Habla con nosotros hoy mismo. Te asesoramos sin compromiso.</p>
+      <div class="cta__actions">
+        <a href="#contacto" class="btn btn--light">Quiero empezar</a>
+        <a href="#" class="btn btn--whatsapp" id="ctaWhatsapp">Escríbenos por WhatsApp</a>
+      </div>
     </div>
   </section>
 
@@ -246,13 +265,14 @@
     <div class="container contact">
       <div class="contact__info">
         <span class="section__eyebrow">Contacto</span>
-        <h2 class="section__title">Hablemos de tu proyecto</h2>
-        <p>Completa el formulario y nuestro equipo te contactará a la brevedad.</p>
+        <h2 class="section__title">Hablemos de tu inversión</h2>
+        <p>Déjanos tus datos o escríbenos directamente por WhatsApp. Te responderemos lo antes posible.</p>
         <ul class="contact__list">
-          <li><span>&#9993;</span> contacto@kepatecnologia.com</li>
-          <li><span>&#9742;</span> +00 000 000 0000</li>
-          <li><span>&#128205;</span> Ciudad, País</li>
+          <li><span>&#9993;</span> contacto@kepafinanzas.com</li>
+          <li><span>&#128241;</span> WhatsApp disponible</li>
+          <li><span>&#128205;</span> Atención online</li>
         </ul>
+        <a href="#" class="btn btn--whatsapp" id="contactWhatsapp">Abrir WhatsApp</a>
       </div>
       <form class="contact__form" id="contactForm" novalidate>
         <div class="field">
@@ -264,14 +284,18 @@
           <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
         </div>
         <div class="field">
-          <label for="asunto">Asunto</label>
-          <input type="text" id="asunto" name="asunto" placeholder="¿En qué podemos ayudarte?" />
+          <label for="interes">Me interesa</label>
+          <select id="interes" name="interes">
+            <option value="invertir">Invertir en metales</option>
+            <option value="partner">Ser partner (comisiones en oro)</option>
+            <option value="info">Solo información</option>
+          </select>
         </div>
         <div class="field">
           <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas..." required></textarea>
         </div>
-        <button type="submit" class="btn btn--primary btn--block">Enviar mensaje</button>
+        <button type="submit" class="btn btn--gold btn--block">Enviar mensaje</button>
         <p class="form__feedback" id="formFeedback" role="status"></p>
       </form>
     </div>
@@ -281,46 +305,72 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__col">
-        <a href="#inicio" class="brand brand--light">
-          <span class="brand__mark">K</span>
-          <span class="brand__text">Kepa<strong>Tecnología</strong></span>
+        <a href="#inicio" class="brand">
+          <img src="img/lingote-oro-icono.svg" alt="Lingote de oro" class="brand__img" />
+          <span class="brand__text">Kepa<strong>Finanzas</strong></span>
         </a>
-        <p>Soluciones tecnológicas que impulsan el crecimiento de tu empresa.</p>
+        <p>Compra y custodia de metales preciosos. Protege tu patrimonio con oro y plata.</p>
       </div>
       <div class="footer__col">
         <h4>Enlaces</h4>
         <ul>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#metales">Metales</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#invertir">Invertir</a></li>
+          <li><a href="#partner">Partner</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Información</h4>
+        <ul>
+          <li><a href="#custodia">Custodia segura</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Servicios</h4>
-        <ul>
-          <li><a href="#servicios">Desarrollo de software</a></li>
-          <li><a href="#servicios">Cloud e infraestructura</a></li>
-          <li><a href="#servicios">Consultoría IT</a></li>
-          <li><a href="#servicios">Ciberseguridad</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>Síguenos</h4>
-        <div class="socials">
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="Instagram">in</a>
-          <a href="#" aria-label="LinkedIn">Li</a>
-          <a href="#" aria-label="X">X</a>
-        </div>
+        <h4>Atención</h4>
+        <p>Resuelve tus dudas con nuestro asistente o por WhatsApp, las 24 horas.</p>
       </div>
     </div>
     <div class="footer__bottom">
       <div class="container">
-        <p>&copy; <span id="year"></span> Kepa Tecnología. Todos los derechos reservados.</p>
+        <p>&copy; <span id="year"></span> KepaFinanzas. Todos los derechos reservados.</p>
+        <p class="footer__disclaimer">La inversión en metales preciosos conlleva riesgos. La información de esta web no constituye asesoramiento financiero.</p>
       </div>
     </div>
   </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Escríbenos por WhatsApp" title="WhatsApp">
+    <svg viewBox="0 0 32 32" width="32" height="32" fill="#fff" aria-hidden="true">
+      <path d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.7 5.5 2.1 7.9L.3 31.7l8-2.1c2.3 1.3 4.9 1.9 7.6 1.9 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4zm0 28.5c-2.4 0-4.8-.6-6.8-1.9l-.5-.3-4.7 1.2 1.3-4.6-.3-.5C3.4 20.6 2.7 18.3 2.7 16 2.7 8.7 8.7 2.7 16 2.7S29.3 8.7 29.3 16 23.3 28.9 16 28.9zm7.3-9.9c-.4-.2-2.4-1.2-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-1.2-1.1-2-2.4-2.2-2.8-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.7.1-.3.1-.5 0-.7-.1-.2-.9-2.2-1.3-3-.3-.8-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5-.4.4-1.4 1.3-1.4 3.3s1.4 3.8 1.6 4.1c.2.3 2.8 4.3 6.8 6 .9.4 1.7.6 2.3.8.9.3 1.8.2 2.5.1.7-.1 2.4-1 2.7-1.9.3-.9.3-1.7.2-1.9-.1-.2-.4-.3-.8-.5z"/>
+    </svg>
+  </a>
+
+  <!-- Asistente IA -->
+  <button class="chat-toggle" id="chatToggle" aria-label="Abrir asistente">
+    <span class="chat-toggle__icon">&#128172;</span>
+    <span class="chat-toggle__label">Pregúntame sobre oro y plata</span>
+  </button>
+
+  <div class="chat" id="chat" aria-hidden="true">
+    <div class="chat__header">
+      <div class="chat__title">
+        <span class="chat__avatar">&#129689;</span>
+        <div>
+          <strong>Asistente KepaFinanzas</strong>
+          <small>Dudas sobre oro, plata e inversión</small>
+        </div>
+      </div>
+      <button class="chat__close" id="chatClose" aria-label="Cerrar">&times;</button>
+    </div>
+    <div class="chat__body" id="chatBody"></div>
+    <div class="chat__suggestions" id="chatSuggestions"></div>
+    <form class="chat__form" id="chatForm">
+      <input type="text" id="chatInput" placeholder="Escribe tu pregunta..." autocomplete="off" />
+      <button type="submit" aria-label="Enviar">&#10148;</button>
+    </form>
+  </div>
 
   <script src="script.js"></script>
 </body>
