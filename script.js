@@ -5,7 +5,7 @@
 /* --- CONFIGURACIÓN ---
    Cambia este número por el de WhatsApp real (formato internacional, solo dígitos).
    Ejemplo España: 34600111222  |  México: 521555...  |  Argentina: 549...        */
-const WHATSAPP_NUMERO = '34600000000';
+const WHATSAPP_NUMERO = '34611918310';
 const WHATSAPP_MENSAJE = 'Hola KepaFinanzas, me gustaría recibir información sobre la inversión en oro y plata.';
 
 function abrirWhatsApp(texto) {
