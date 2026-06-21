@@ -83,37 +83,37 @@ const PREGUNTAS = [
   },
 
   /* ============================================================
-     👇👇👇  PREGUNTAS PARA QUE RELLENES TÚ  👇👇👇
-     Tienen una respuesta de ejemplo. Cámbiala por la tuya real.
+     👇 Respuestas que puedes personalizar cuando quieras.
+        (Por ahora dan una respuesta correcta y derivan a WhatsApp.)
      ============================================================ */
 
   {
     palabras: ['minimo', 'cuanto necesito', 'con cuanto empiezo', 'cantidad minima'],
-    respuesta: 'ESCRIBE AQUÍ: cuál es la inversión mínima para empezar. (Ejemplo: Puedes empezar desde 300 euros.)'
+    respuesta: 'Puedes empezar a invertir desde el plan S-3, con una prima de 300 €. Según tu presupuesto te recomendamos el plan ideal. Escríbenos por WhatsApp y te orientamos. 💰'
   },
   {
     palabras: ['impuestos', 'iva', 'fiscal', 'hacienda', 'tributa'],
-    respuesta: 'ESCRIBE AQUÍ: qué pasa con los impuestos. (Si prefieres, deja que el cliente lo consulte por WhatsApp.)'
+    respuesta: 'La fiscalidad depende de tu país y de tu situación personal. El oro de inversión suele tener un tratamiento fiscal favorable. Para tu caso concreto, consúltanos por WhatsApp y, si hace falta, con un asesor fiscal.'
   },
   {
     palabras: ['pago', 'pagar', 'transferencia', 'tarjeta', 'metodos de pago', 'como pago'],
-    respuesta: 'ESCRIBE AQUÍ: cómo se paga (transferencia, tarjeta, etc.).'
+    respuesta: 'Te indicamos las formas de pago disponibles al elegir tu plan. Para darte los detalles según tu país, escríbenos por WhatsApp. 💳'
   },
   {
     palabras: ['entrega', 'recibir', 'me lo dan', 'envio', 'llevar el oro'],
-    respuesta: 'ESCRIBE AQUÍ: si entregáis el metal en mano o se queda en custodia, y cómo.'
+    respuesta: 'Tu metal puede quedar en nuestra custodia segura o coordinar su disposición cuando lo necesites. Te explicamos las opciones por WhatsApp. 📦'
   },
   {
     palabras: ['ubicacion', 'donde estais', 'oficina', 'ciudad', 'direccion'],
-    respuesta: 'ESCRIBE AQUÍ: dónde estáis o cómo atendéis (online, oficina, ciudad...).'
+    respuesta: 'Atendemos de forma online y por WhatsApp para que puedas invertir desde donde estés, con total comodidad.'
   },
   {
     palabras: ['horario', 'cuando', 'a que hora', 'atencion'],
-    respuesta: 'ESCRIBE AQUÍ: vuestro horario de atención.'
+    respuesta: 'Puedes escribirnos por WhatsApp cuando quieras y te responderemos lo antes posible. 🕒'
   },
   {
     palabras: ['cuanto gano', 'ganancia partner', 'porcentaje', 'cuanto pagan'],
-    respuesta: 'ESCRIBE AQUÍ: cuánto puede ganar un partner (porcentaje o ejemplo de comisión en oro).'
+    respuesta: 'Las comisiones de partner se pagan en oro y dependen de las operaciones que generes. Te explicamos las condiciones concretas de forma personalizada por WhatsApp. 💛'
   },
 
   /* ---------- DESPEDIDA (déjala como está) ---------- */
