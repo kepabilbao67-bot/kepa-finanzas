@@ -47,6 +47,14 @@ nav.querySelectorAll('a').forEach((link) => {
   }
 });
 
+/* --- Botones "Contratar" de cada plan (abren WhatsApp con el plan elegido) --- */
+document.querySelectorAll('.plan-buy').forEach((el) => {
+  const plan = el.dataset.plan || '';
+  el.setAttribute('href', abrirWhatsApp('Hola KepaFinanzas, me interesa contratar el plan ' + plan + '. ¿Me dais más información para empezar?'));
+  el.setAttribute('target', '_blank');
+  el.setAttribute('rel', 'noopener');
+});
+
 /* --- Scroll reveal --- */
 const revealTargets = document.querySelectorAll(
   '.card, .plan, .way, .custody__media, .custody__content, .section__head, .contact__info, .contact__form'
