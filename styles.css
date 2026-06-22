@@ -321,6 +321,17 @@ img { max-width: 100%; display: block; }
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
+/* ===== Botón volver arriba ===== */
+.to-top {
+  position: fixed; right: 24px; bottom: 96px; z-index: 190;
+  width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--gold-dark);
+  background: var(--bg-2); color: var(--gold-light); font-size: 20px; cursor: pointer;
+  display: grid; place-items: center; opacity: 0; pointer-events: none;
+  transition: opacity .25s, transform .25s, background .2s; box-shadow: var(--shadow);
+}
+.to-top.show { opacity: 1; pointer-events: auto; }
+.to-top:hover { background: var(--bg-3); transform: translateY(-3px); }
+
 /* ===== Responsive ===== */
 @media (max-width: 920px) {
   .hero__inner, .custody, .contact { grid-template-columns: 1fr; }

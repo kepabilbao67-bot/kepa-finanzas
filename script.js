@@ -17,10 +17,17 @@ function abrirWhatsApp(texto) {
 /* --- Año del footer --- */
 document.getElementById('year').textContent = new Date().getFullYear();
 
+/* --- Botón volver arriba --- */
+const toTop = document.getElementById('toTop');
+if (toTop) {
+  toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+}
+
 /* --- Header con sombra al hacer scroll --- */
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 20);
+  if (toTop) toTop.classList.toggle('show', window.scrollY > 500);
 });
 
 /* --- Menú móvil --- */
