@@ -123,3 +123,51 @@ const PREGUNTAS = [
   }
 
 ];
+
+/* ============================================================
+   PREGUNTAS NUEVAS — AÑADIDAS AUTOMÁTICAMENTE
+   Estas complementan las que ya tenías con más detalle.
+   ============================================================ */
+
+PREGUNTAS.push(
+  {
+    palabras: ['calculadora', 'cuanto gano', 'simulador', 'cuanto tendria', 'rentabilidad'],
+    respuesta: 'Tenemos una calculadora en la web donde puedes simular cuánto tendrías ahorrando X€ al mes durante X años. Como referencia: el oro ha subido +144% en los últimos 5 años. Con 100€/mes × 5 años podrías tener más de 14.000€ (invirtiendo solo 6.000€). Baja a la sección "Calculadora" o pregúntame más.'
+  },
+  {
+    palabras: ['inflacion', 'banco', 'pierdo dinero', 'cuenta ahorro', 'mi dinero pierde valor'],
+    respuesta: 'Exacto. La inflación en España ha sido +25% en 5 años. Si tienes 10.000€ en el banco, hoy compran lo que antes costaba 7.500€. Has perdido 2.500€ sin hacer nada. El oro en ese mismo periodo ha subido +144%. Por eso cada vez más gente ahorra en metal físico en vez de dejar el dinero "quieto".'
+  },
+  {
+    palabras: ['bitcoin', 'cripto', 'crypto', 'ethereum', 'criptomoneda'],
+    respuesta: 'El oro y las criptomonedas son complementarios. El oro lleva 5.000 años protegiendo patrimonio con subidas estables (+144% en 5 años). Bitcoin puede caer un 80% en semanas. Mi consejo: el oro como base segura, la cripto como apuesta extra. ¿Por qué no tener ambos?'
+  },
+  {
+    palabras: ['impuestos españa', 'irpf', 'hacienda españa', 'modelo 720', 'fiscal españa'],
+    respuesta: 'En España: ✅ El oro de inversión NO tiene IVA (exento por ley UE). ✅ Solo pagas impuestos cuando VENDES con beneficio (19-27% sobre la ganancia). ✅ Si no vendes, no pagas nada. ⚠️ Si tu oro fuera de España supera 50.000€, debes informar en el Modelo 720. Para tu caso concreto, consulta con un asesor fiscal.'
+  },
+  {
+    palabras: ['5000 años', 'historia', 'siempre ha subido', 'bancos centrales'],
+    respuesta: 'El oro lleva más de 5.000 años como reserva de valor. Ha sobrevivido guerras, imperios caídos, crisis bancarias. Nunca ha quebrado, nunca ha sido rescatado. Y los bancos centrales del mundo llevan 3 años comprando +1.000 toneladas al año. Si los que imprimen el dinero compran oro... algo saben. 🏛️'
+  },
+  {
+    palabras: ['switch', 'ratio', 'oro plata ratio', 'cambiar', 'intercambiar metales'],
+    respuesta: 'El Switch te permite convertir tu oro en plata (o viceversa) según el ratio oro/plata del mercado. Si el ratio supera 80, la plata está "barata" → conviene tener más plata. Si baja de 80, el oro está más favorable. El Switch Pilot lo hace AUTOMÁTICAMENTE (disponible desde plan L-12), generando +42% de beneficio extra.'
+  },
+  {
+    palabras: ['kepa', 'quien eres', 'sobre ti', 'asesor'],
+    respuesta: 'Soy Kepa Bilbao, de Bilbao. Colaborador oficial de AUVESTA Edelmetalle AG. Te ayudo a proteger tu patrimonio ahorrando en metales preciosos físicos. No soy un vendedor — soy un asesor que primero invirtió su propio dinero y ahora ayuda a otros. Si quieres hablar conmigo directamente: WhatsApp 611 918 310.'
+  },
+  {
+    palabras: ['envio', 'enviar a casa', 'recibir lingote', 'entrega domicilio'],
+    respuesta: 'Sí, puedes pedir que te envíen tu metal a casa: desde 1g de oro o 50g de plata. Envío asegurado con tracking online. Solo entras en tu depósito, eliges cantidad y formato del lingote, y lo recibes en unos días. Aunque yo recomiendo dejarlo en la bóveda (está más seguro), siempre tienes la OPCIÓN.'
+  },
+  {
+    palabras: ['vender', 'liquidez', 'recuperar dinero', 'retirar', 'sacar mi dinero'],
+    respuesta: 'Puedes vender en cualquier momento: entras online, seleccionas la cantidad, se vende a precio de mercado y el dinero va a tu cuenta bancaria. Sin plazos, sin penalizaciones, sin pedir permiso. Además hay garantía de recompra al 100% para todo el metal custodiado. Más fácil que un plazo fijo.'
+  },
+  {
+    palabras: ['auvesta', 'empresa', 'quien esta detras', 'seria', 'fiable', 'de fiar'],
+    respuesta: 'AUVESTA Edelmetalle AG es una sociedad anónima alemana fundada en 2009. +200.000 inversores en 134 países. +500 millones € de facturación. Certificada por Trusted Shops. Auditada cada trimestre por inspectores independientes. Múltiples premios como mejor dealer de lingotes de Europa. 17+ años sin problemas. 🏛️'
+  }
+);
