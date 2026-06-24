@@ -24,6 +24,20 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Ticker de precios (nuevo) -->
+  <div class="ticker">
+    <div class="ticker__content">
+      <span class="ticker__item">🥇 ORO: <span class="ticker__price">116,49€/g</span> <span class="ticker__up">▲ +0,23%</span></span>
+      <span class="ticker__item">🥈 PLATA: <span class="ticker__price">1,82€/g</span> <span class="ticker__down">▼ -0,8%</span></span>
+      <span class="ticker__item">⬜ PLATINO: <span class="ticker__price">29,4€/g</span> <span class="ticker__up">▲ +0,5%</span></span>
+      <span class="ticker__item">🔲 PALADIO: <span class="ticker__price">27,1€/g</span> <span class="ticker__up">▲ +1,2%</span></span>
+      <span class="ticker__item">📊 RATIO ORO/PLATA: <span class="ticker__price">66.2</span></span>
+      <span class="ticker__item">🥇 ORO: <span class="ticker__price">116,49€/g</span> <span class="ticker__up">▲ +0,23%</span></span>
+      <span class="ticker__item">🥈 PLATA: <span class="ticker__price">1,82€/g</span> <span class="ticker__down">▼ -0,8%</span></span>
+      <span class="ticker__item">⬜ PLATINO: <span class="ticker__price">29,4€/g</span> <span class="ticker__up">▲ +0,5%</span></span>
+    </div>
+  </div>
+
   <!-- Header -->
   <header class="header" id="header">
     <div class="container header__inner">
@@ -252,6 +266,58 @@
     </div>
   </section>
 
+  <!-- Testimonios -->
+  <section class="section" id="testimonios">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__eyebrow">Testimonios</span>
+        <h2 class="section__title">Lo que dicen nuestros inversores</h2>
+        <p class="section__sub">Personas reales que ya protegen su patrimonio con nosotros</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="card testimonial">
+          <div class="testimonial__stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial__text">"Llevaba años con el dinero en el banco perdiendo valor. Desde que empecé, por fin veo mi patrimonio crecer. Y lo mejor: es MÍO de verdad."</p>
+          <div class="testimonial__author"><strong>María G.</strong><span>Empresaria · Madrid · 8 meses</span></div>
+        </article>
+        <article class="card testimonial">
+          <div class="testimonial__stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial__text">"Pensé que era para ricos. Pero empecé con 50€/mes y ya tengo más de 800€ en oro. La sensación de tener un lingote con tu nombre es increíble."</p>
+          <div class="testimonial__author"><strong>Javier R.</strong><span>Autónomo · Barcelona · 14 meses</span></div>
+        </article>
+        <article class="card testimonial">
+          <div class="testimonial__stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial__text">"Lo abrí para mis hijos. Cada mes pongo 25€ para cada uno. Cuando cumplan 18 tendrán un colchón de oro que ningún banco les puede dar."</p>
+          <div class="testimonial__author"><strong>Laura P.</strong><span>Madre de 2 · Bilbao · 10 meses</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculadora de Ahorro -->
+  <section class="section section--dark" id="calculadora">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__eyebrow">Simulador</span>
+        <h2 class="section__title">Calculadora de Ahorro en Oro</h2>
+        <p class="section__sub">Descubre cuánto podrías tener en el futuro</p>
+      </div>
+      <div class="calc">
+        <div class="calc__inputs">
+          <div class="calc__field"><label>Ahorro mensual (€)</label><input type="range" id="calcMonthly" min="25" max="1000" value="100" step="25"><span class="calc__val" id="calcMonthlyVal">100€/mes</span></div>
+          <div class="calc__field"><label>Años</label><input type="range" id="calcYears" min="1" max="20" value="5" step="1"><span class="calc__val" id="calcYearsVal">5 años</span></div>
+          <div class="calc__field"><label>Crecimiento anual (%)</label><input type="range" id="calcGrowth" min="5" max="25" value="15" step="1"><span class="calc__val" id="calcGrowthVal">15%</span></div>
+        </div>
+        <div class="calc__results">
+          <div class="calc__result"><span>Total invertido</span><strong id="calcInvested">6.000€</strong></div>
+          <div class="calc__result calc__result--gold"><span>Valor estimado</span><strong id="calcValue">8.965€</strong></div>
+          <div class="calc__result calc__result--green"><span>Beneficio</span><strong id="calcProfit">+2.965€</strong></div>
+        </div>
+        <p class="calc__note">*Estimación con interés compuesto. Rendimiento pasado no garantiza futuro.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta">
     <div class="container cta__inner">
@@ -379,7 +445,25 @@
   <!-- Botón volver arriba -->
   <button class="to-top" id="toTop" aria-label="Volver arriba" title="Volver arriba">&#8593;</button>
 
+  <!-- Social Proof -->
+  <div class="social-proof" id="socialProof">
+    <span class="social-proof__icon">🥇</span>
+    <div class="social-proof__text"><strong id="spText">Alguien de Madrid acaba de pedir info</strong><span id="spTime">Hace 2 min</span></div>
+  </div>
+
   <script src="preguntas.js"></script>
   <script src="script.js"></script>
+  <!-- Calculadora + Social Proof -->
+  <script>
+  // Calculadora
+  const cM=document.getElementById('calcMonthly'),cY=document.getElementById('calcYears'),cG=document.getElementById('calcGrowth');
+  function updateCalc(){const m=+cM.value,y=+cY.value,g=+cG.value/100;document.getElementById('calcMonthlyVal').textContent=m+'€/mes';document.getElementById('calcYearsVal').textContent=y+(y===1?' año':' años');document.getElementById('calcGrowthVal').textContent=(g*100)+'%';const inv=m*12*y;const mr=g/12;let fv=0;for(let i=0;i<y*12;i++)fv=(fv+m)*(1+mr);const pr=fv-inv;document.getElementById('calcInvested').textContent=inv.toLocaleString('es-ES')+'€';document.getElementById('calcValue').textContent=Math.round(fv).toLocaleString('es-ES')+'€';document.getElementById('calcProfit').textContent='+'+Math.round(pr).toLocaleString('es-ES')+'€';}
+  cM.addEventListener('input',updateCalc);cY.addEventListener('input',updateCalc);cG.addEventListener('input',updateCalc);updateCalc();
+
+  // Social Proof
+  const sps=[{t:'Alguien de Madrid acaba de pedir info',d:'Hace 2 min'},{t:'Una persona de Barcelona se ha registrado',d:'Hace 5 min'},{t:'3 personas están viendo esta página',d:'Ahora'},{t:'Alguien de Bilbao ha solicitado la guía',d:'Hace 8 min'},{t:'Nuevo lead desde Instagram',d:'Hace 3 min'},{t:'Alguien de Valencia quiere saber más',d:'Hace 12 min'}];
+  let spI=0;function showSP(){const sp=document.getElementById('socialProof');const d=sps[spI%sps.length];document.getElementById('spText').textContent=d.t;document.getElementById('spTime').textContent=d.d;sp.classList.add('show');setTimeout(()=>sp.classList.remove('show'),4000);spI++;}
+  setTimeout(showSP,12000);setInterval(showSP,30000);
+  </script>
 </body>
 </html>
