@@ -171,3 +171,39 @@ PREGUNTAS.push(
     respuesta: 'AUVESTA Edelmetalle AG es una sociedad anónima alemana fundada en 2009. +200.000 inversores en 134 países. +500 millones € de facturación. Certificada por Trusted Shops. Auditada cada trimestre por inspectores independientes. Múltiples premios como mejor dealer de lingotes de Europa. 17+ años sin problemas. 🏛️'
   }
 );
+
+/* ============================================================
+   PREGUNTAS v3 — OBJECIONES DE VENTA
+   Las dudas/miedos más comunes que frenan la compra.
+   ============================================================ */
+
+PREGUNTAS.push(
+  {
+    palabras: ['no tengo dinero', 'no puedo', 'caro', 'mucho dinero', 'no me llega'],
+    respuesta: 'Entiendo. Pero piensa en esto: con solo 25€/mes ya puedes empezar. Es menos de 1€ al día. Menos que un café. La diferencia es que el café desaparece en 5 minutos... tu oro puede estar aquí en 20 años valiendo el doble. No se trata de ser rico, se trata de EMPEZAR. ☕→🥇'
+  },
+  {
+    palabras: ['estafa', 'timo', 'piramide', 'fraude', 'no me fio', 'desconfio'],
+    respuesta: 'Es normal tener precaución. AUVESTA es una sociedad anónima ALEMANA (la regulación más estricta de Europa), con 17 años, +200.000 inversores, certificada Trusted Shops, y auditada cada 3 meses por inspectores independientes. El inventario se publica online CADA DÍA. Si fuera un fraude, no duraría 17 años con 200.000 clientes. Además, TÚ eres dueño legal del lingote con número de serie.'
+  },
+  {
+    palabras: ['pensarlo', 'no estoy seguro', 'luego', 'mañana', 'ya vere', 'no se'],
+    respuesta: 'Tómate tu tiempo, sin prisa. Pero ten en cuenta esto: hace 5 años el gramo de oro estaba a 48€. Hoy está a 116€. Cada día que pasa sin empezar, necesitas más dinero para la misma cantidad de oro. No digo que compres hoy todo — digo que EMPIECES. Aunque sea con el plan más pequeño (300€). El primer paso es siempre el más importante.'
+  },
+  {
+    palabras: ['familia', 'mi mujer', 'mi marido', 'pareja', 'consultarlo'],
+    respuesta: 'Claro, es importante que lo habléis juntos. Te sugiero esto: enséñale la web (kepafinanzas.com) y que vea los datos. El oro ha subido +144% en 5 años. Es un activo REAL con número de serie a vuestro nombre. Sin contratos ni permanencia. Si después de verlo juntos os interesa, aquí estoy para resolver las dudas de los dos. 💛'
+  },
+  {
+    palabras: ['riesgo', 'puedo perder', 'seguro que sube', 'garantia', 'garantizado'],
+    respuesta: 'Honestamente: nadie puede garantizar que el oro suba siempre a corto plazo. Puede bajar temporalmente. PERO: en 5.000 años de historia, a LARGO PLAZO siempre ha subido. Y hay garantía de recompra 100% — puedes vender cuando quieras sin penalización. El riesgo REAL es dejar tu dinero en el banco perdiendo un 5% al año por inflación.'
+  },
+  {
+    palabras: ['mejor inversion', 'pisos', 'inmobiliario', 'bolsa', 'fondos', 'acciones'],
+    respuesta: 'Cada inversión tiene su lugar. Pero compara: un piso necesita +50.000€ y tiene gastos. La bolsa puede caer un 40% en crisis. El oro: empiezas con 25€/mes, sin gastos ocultos, es TUYO físicamente, y puedes venderlo en 5 segundos online. No son competencia, son COMPLEMENTO. El oro es la base segura de cualquier cartera.'
+  },
+  {
+    palabras: ['edad', 'viejo', 'joven', 'tarde', 'pronto', 'cuando empezar'],
+    respuesta: 'No hay edad mala para proteger tu patrimonio. Si eres joven: el tiempo es tu mayor aliado (interés compuesto). Si eres mayor: proteger lo que ya tienes de la inflación es urgente. El mejor momento para plantar un árbol fue hace 20 años. El segundo mejor momento es HOY.'
+  }
+);
