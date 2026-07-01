@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0d12"/>
+      <stop offset="100%" style="stop-color:#1c1e28"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5d061"/>
+      <stop offset="50%" style="stop-color:#d4af37"/>
+      <stop offset="100%" style="stop-color:#a87f1e"/>
+    </linearGradient>
+  </defs>
+  <!-- Fondo -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Glow dorado -->
+  <circle cx="900" cy="300" r="250" fill="#d4af37" opacity="0.08"/>
+  <circle cx="200" cy="500" r="150" fill="#d4af37" opacity="0.05"/>
+  <!-- Líneas decorativas -->
+  <line x1="80" y1="580" x2="1120" y2="580" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+  <!-- Texto principal -->
+  <text x="80" y="180" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="url(#gold)">Invierte en Oro</text>
+  <text x="80" y="260" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#ffffff">y Plata Físicos</text>
+  <!-- Subtítulo -->
+  <text x="80" y="330" font-family="Arial, sans-serif" font-size="28" fill="#b9b7ad">Protege tu patrimonio con metales preciosos reales</text>
+  <!-- Stats -->
+  <rect x="80" y="380" width="200" height="80" rx="12" fill="#1c1e28" stroke="#d4af37" stroke-width="1"/>
+  <text x="180" y="415" font-family="Arial" font-size="14" fill="#b9b7ad" text-anchor="middle">Rentabilidad 5 años</text>
+  <text x="180" y="445" font-family="Georgia" font-size="28" font-weight="bold" fill="#d4af37" text-anchor="middle">+144%</text>
+  <rect x="300" y="380" width="200" height="80" rx="12" fill="#1c1e28" stroke="#d4af37" stroke-width="1"/>
+  <text x="400" y="415" font-family="Arial" font-size="14" fill="#b9b7ad" text-anchor="middle">Desde</text>
+  <text x="400" y="445" font-family="Georgia" font-size="28" font-weight="bold" fill="#d4af37" text-anchor="middle">25€/mes</text>
+  <rect x="520" y="380" width="200" height="80" rx="12" fill="#1c1e28" stroke="#d4af37" stroke-width="1"/>
+  <text x="620" y="415" font-family="Arial" font-size="14" fill="#b9b7ad" text-anchor="middle">Inversores</text>
+  <text x="620" y="445" font-family="Georgia" font-size="28" font-weight="bold" fill="#d4af37" text-anchor="middle">+200.000</text>
+  <!-- Nombre -->
+  <text x="80" y="540" font-family="Arial" font-size="22" font-weight="bold" fill="#ffffff">Kepa Bilbao</text>
+  <text x="80" y="565" font-family="Arial" font-size="16" fill="#b9b7ad">Especialista en Metales Preciosos · Bilbao</text>
+  <!-- Web -->
+  <text x="1120" y="565" font-family="Arial" font-size="14" fill="#d4af37" text-anchor="end">kepafinanzas.com</text>
+  <!-- Lingote simplificado -->
+  <rect x="850" y="150" width="220" height="140" rx="8" fill="url(#gold)" opacity="0.9" transform="rotate(-5, 960, 220)"/>
+  <rect x="870" y="170" width="180" height="100" rx="4" fill="none" stroke="#0c0d12" stroke-width="2" opacity="0.3" transform="rotate(-5, 960, 220)"/>
+  <text x="960" y="230" font-family="Georgia" font-size="24" font-weight="bold" fill="#0c0d12" text-anchor="middle" transform="rotate(-5, 960, 220)">Au 999.9</text>
+  <!-- Segundo lingote plata -->
+  <rect x="900" y="320" width="180" height="120" rx="8" fill="#c7ccd1" opacity="0.7" transform="rotate(3, 990, 380)"/>
+  <text x="990" y="388" font-family="Georgia" font-size="20" font-weight="bold" fill="#2a2c38" text-anchor="middle" transform="rotate(3, 990, 380)">Ag 999</text>
+</svg>
