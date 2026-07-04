@@ -3,16 +3,51 @@
    Las preguntas y respuestas del asistente están en preguntas.js
    ========================================================= */
 
-/* --- CONFIGURACIÓN ---
-   Cambia este número por el de WhatsApp real (formato internacional, solo dígitos).
-   Ejemplo España: 34611918310                                                    */
+/* ============ CONFIGURACIÓN (edita solo esta parte) ============
+
+   1) WHATSAPP: tu número en formato internacional, solo dígitos.
+   2) PRECIOS:  actualiza aquí los precios cuando quieras.
+                La fecha se muestra en el ticker para ser transparentes.
+   =============================================================== */
 const WHATSAPP_NUMERO = '34611918310';
 const WHATSAPP_MENSAJE = 'Hola KepaFinanzas, me gustaría recibir información sobre la inversión en oro y plata.';
+
+const PRECIOS = {
+  fecha: '04/07/2026',            // 👈 cambia la fecha cuando actualices precios
+  metales: [
+    { icono: '🥇', nombre: 'ORO',     precio: '116,49€/g', cambio: '+0,23%', sube: true },
+    { icono: '🥈', nombre: 'PLATA',   precio: '1,82€/g',   cambio: '-0,8%',  sube: false },
+    { icono: '⬜', nombre: 'PLATINO', precio: '29,4€/g',   cambio: '+0,5%',  sube: true },
+    { icono: '🔲', nombre: 'PALADIO', precio: '27,1€/g',   cambio: '+1,2%',  sube: true },
+    { icono: '📊', nombre: 'RATIO ORO/PLATA', precio: '64,0', cambio: '', sube: true }
+  ]
+};
+
+/* =============== FIN DE LA CONFIGURACIÓN ====================== */
 
 function abrirWhatsApp(texto) {
   const msg = encodeURIComponent(texto || WHATSAPP_MENSAJE);
   return 'https://wa.me/' + WHATSAPP_NUMERO + '?text=' + msg;
 }
+
+/* --- Ticker de precios (generado desde PRECIOS) --- */
+(function pintarTicker() {
+  const cont = document.getElementById('tickerContent');
+  if (!cont) return;
+  function bloque() {
+    let html = '';
+    PRECIOS.metales.forEach((m) => {
+      const flecha = m.cambio ? (m.sube
+        ? ' <span class="ticker__up">▲ ' + m.cambio + '</span>'
+        : ' <span class="ticker__down">▼ ' + m.cambio + '</span>') : '';
+      html += '<span class="ticker__item">' + m.icono + ' ' + m.nombre +
+              ': <span class="ticker__price">' + m.precio + '</span>' + flecha + '</span>';
+    });
+    html += '<span class="ticker__item ticker__note">Precios orientativos · ' + PRECIOS.fecha + '</span>';
+    return html;
+  }
+  cont.innerHTML = bloque() + bloque(); // duplicado para el bucle infinito
+})();
 
 /* --- Año del footer --- */
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -54,7 +89,7 @@ nav.querySelectorAll('a').forEach((link) => {
   }
 });
 
-/* --- Botones "Contratar" de cada plan (abren WhatsApp con el plan elegido) --- */
+/* --- Botones "Contratar" de cada plan --- */
 document.querySelectorAll('.plan-buy').forEach((el) => {
   const plan = el.dataset.plan || '';
   el.setAttribute('href', abrirWhatsApp('Hola KepaFinanzas, me interesa contratar el plan ' + plan + '. ¿Me dais más información para empezar?'));
@@ -64,7 +99,7 @@ document.querySelectorAll('.plan-buy').forEach((el) => {
 
 /* --- Scroll reveal --- */
 const revealTargets = document.querySelectorAll(
-  '.card, .plan, .way, .custody__media, .custody__content, .section__head, .contact__info, .contact__form'
+  '.card, .plan, .way, .custody__media, .custody__content, .section__head, .contact__info, .contact__form, .trust__stat, .faq__item'
 );
 revealTargets.forEach((el) => el.classList.add('reveal'));
 const obs = new IntersectionObserver((entries) => {
@@ -74,32 +109,70 @@ const obs = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 revealTargets.forEach((el) => obs.observe(el));
 
-/* --- Validación del formulario de contacto --- */
+/* --- Formulario de contacto: valida y envía por WhatsApp --- */
 const form = document.getElementById('contactForm');
 const feedback = document.getElementById('formFeedback');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const nombre = form.nombre.value.trim();
-  const email = form.email.value.trim();
-  const mensaje = form.mensaje.value.trim();
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const nombre = form.nombre.value.trim();
+    const email = form.email.value.trim();
+    const interes = form.interes.value;
+    const mensaje = form.mensaje.value.trim();
+    const acepta = form.privacidad.checked;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (!nombre || !email || !mensaje) {
-    feedback.textContent = 'Por favor completa todos los campos.';
-    feedback.className = 'form__feedback error';
-    return;
-  }
-  if (!emailRegex.test(email)) {
-    feedback.textContent = 'Ingresa un correo electrónico válido.';
-    feedback.className = 'form__feedback error';
-    return;
-  }
-  feedback.innerHTML = '¡Gracias ' + nombre + '! Hemos recibido tu mensaje. ' +
-    'Si quieres respuesta inmediata, <a href="' + abrirWhatsApp('Hola, soy ' + nombre + '. ' + mensaje) +
-    '" target="_blank" rel="noopener">escríbenos por WhatsApp</a>.';
-  feedback.className = 'form__feedback success';
-  form.reset();
-});
+    if (!nombre || !email || !mensaje) {
+      feedback.textContent = 'Por favor completa todos los campos.';
+      feedback.className = 'form__feedback error';
+      return;
+    }
+    if (!emailRegex.test(email)) {
+      feedback.textContent = 'Ingresa un correo electrónico válido.';
+      feedback.className = 'form__feedback error';
+      return;
+    }
+    if (!acepta) {
+      feedback.textContent = 'Debes aceptar la política de privacidad para continuar.';
+      feedback.className = 'form__feedback error';
+      return;
+    }
+
+    const texto = 'Hola, soy ' + nombre + ' (' + email + ').\n' +
+                  'Me interesa: ' + interes + '.\n\n' + mensaje;
+    window.open(abrirWhatsApp(texto), '_blank', 'noopener');
+
+    feedback.textContent = '¡Gracias ' + nombre + '! Se ha abierto WhatsApp con tu mensaje. Si no se abrió, revisa el bloqueador de ventanas.';
+    feedback.className = 'form__feedback success';
+    form.reset();
+  });
+}
+
+/* --- Calculadora de ahorro --- */
+const cM = document.getElementById('calcMonthly');
+const cY = document.getElementById('calcYears');
+const cG = document.getElementById('calcGrowth');
+function updateCalc() {
+  if (!cM) return;
+  const m = +cM.value, y = +cY.value, g = +cG.value / 100;
+  document.getElementById('calcMonthlyVal').textContent = m + '€/mes';
+  document.getElementById('calcYearsVal').textContent = y + (y === 1 ? ' año' : ' años');
+  document.getElementById('calcGrowthVal').textContent = (g * 100) + '%';
+  const inv = m * 12 * y;
+  const mr = g / 12;
+  let fv = 0;
+  for (let i = 0; i < y * 12; i++) fv = (fv + m) * (1 + mr);
+  const pr = fv - inv;
+  document.getElementById('calcInvested').textContent = inv.toLocaleString('es-ES') + '€';
+  document.getElementById('calcValue').textContent = Math.round(fv).toLocaleString('es-ES') + '€';
+  document.getElementById('calcProfit').textContent = (pr >= 0 ? '+' : '') + Math.round(pr).toLocaleString('es-ES') + '€';
+}
+if (cM) {
+  cM.addEventListener('input', updateCalc);
+  cY.addEventListener('input', updateCalc);
+  cG.addEventListener('input', updateCalc);
+  updateCalc();
+}
 
 /* =========================================================
    ASISTENTE (usa las preguntas de preguntas.js)

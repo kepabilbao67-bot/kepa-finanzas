@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="KepaFinanzas - Compra y custodia de metales preciosos: oro y plata. Invierte de forma segura desde 25€/mes o conviértete en partner y cobra comisiones en oro. Asesor: Kepa Bilbao." />
+  <meta name="description" content="KepaFinanzas - Compra y custodia de metales preciosos: oro y plata físicos con custodia certificada. Planes desde 300 € o programa de partners con comisiones en oro. Asesor: Kepa Bilbao." />
   <meta name="keywords" content="invertir oro, comprar oro España, ahorro oro, plata inversión, custodia metales preciosos, oro físico, KepaFinanzas, Kepa Bilbao, partner oro" />
   <meta name="author" content="Kepa Bilbao - KepaFinanzas" />
   <title>KepaFinanzas | Invierte en Oro y Plata desde 25€/mes</title>
@@ -20,24 +20,32 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="KepaFinanzas | Inversión y custodia de oro y plata" />
   <meta name="twitter:description" content="Compra oro y plata físicos y mantenlos en bóveda vigilada. Invierte de forma segura o sé partner y cobra comisiones en oro." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mejoras.css" />
+
+  <!-- Datos estructurados para Google (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "KepaFinanzas",
+    "description": "Compra y custodia de metales preciosos: oro y plata físicos. Colaborador oficial de AUVESTA Edelmetalle AG.",
+    "url": "https://kepabilbao67-bot.github.io/kepa-finanzas/",
+    "email": "kepabilbao67@gmail.com",
+    "telephone": "+34611918310",
+    "areaServed": "ES",
+    "founder": { "@type": "Person", "name": "Kepa Bilbao" }
+  }
+  </script>
 </head>
 <body>
-  <!-- Ticker de precios (nuevo) -->
-  <div class="ticker">
-    <div class="ticker__content">
-      <span class="ticker__item">🥇 ORO: <span class="ticker__price">116,49€/g</span> <span class="ticker__up">▲ +0,23%</span></span>
-      <span class="ticker__item">🥈 PLATA: <span class="ticker__price">1,82€/g</span> <span class="ticker__down">▼ -0,8%</span></span>
-      <span class="ticker__item">⬜ PLATINO: <span class="ticker__price">29,4€/g</span> <span class="ticker__up">▲ +0,5%</span></span>
-      <span class="ticker__item">🔲 PALADIO: <span class="ticker__price">27,1€/g</span> <span class="ticker__up">▲ +1,2%</span></span>
-      <span class="ticker__item">📊 RATIO ORO/PLATA: <span class="ticker__price">66.2</span></span>
-      <span class="ticker__item">🥇 ORO: <span class="ticker__price">116,49€/g</span> <span class="ticker__up">▲ +0,23%</span></span>
-      <span class="ticker__item">🥈 PLATA: <span class="ticker__price">1,82€/g</span> <span class="ticker__down">▼ -0,8%</span></span>
-      <span class="ticker__item">⬜ PLATINO: <span class="ticker__price">29,4€/g</span> <span class="ticker__up">▲ +0,5%</span></span>
-    </div>
+  <!-- Ticker de precios (se rellena desde script.js — edita los precios ahí) -->
+  <div class="ticker" aria-label="Precios orientativos de metales preciosos">
+    <div class="ticker__content" id="tickerContent"></div>
   </div>
 
   <!-- Header -->
@@ -55,6 +63,7 @@
           <li><a href="#planes" class="nav__link">Planes</a></li>
           <li><a href="#invertir" class="nav__link">Invertir</a></li>
           <li><a href="#partner" class="nav__link">Partner</a></li>
+          <li><a href="#faq" class="nav__link">FAQ</a></li>
           <li><a href="#contacto" class="nav__link">Contacto</a></li>
         </ul>
         <a href="#contacto" class="btn btn--gold nav__cta">Empieza ahora</a>
@@ -124,12 +133,12 @@
         <article class="card">
           <div class="card__icon">&#128200;</div>
           <h3>Liquidez global</h3>
-          <p>El oro y la plata se reconocen y valoran en todo el mundo, siempre.</p>
+          <p>El oro y la plata se reconocen y valoran en todo el mundo, siempre. Puedes vender online cuando quieras.</p>
         </article>
         <article class="card">
           <div class="card__icon">&#129309;</div>
           <h3>Acompañamiento</h3>
-          <p>Te guiamos paso a paso en tu inversión, sin tecnicismos ni complicaciones.</p>
+          <p>Te guío paso a paso en tu inversión, sin tecnicismos ni complicaciones.</p>
         </article>
         <article class="card">
           <div class="card__icon">&#128241;</div>
@@ -237,7 +246,7 @@
     <div class="container">
       <div class="section__head">
         <span class="section__eyebrow">Dos formas de crecer con nosotros</span>
-        <h2 class="section__title">Invierte o convíértete en partner</h2>
+        <h2 class="section__title">Invierte o conviértete en partner</h2>
         <p class="section__sub">Elige el camino que mejor se adapte a ti. Puedes hacer ambos.</p>
       </div>
 
@@ -268,30 +277,22 @@
     </div>
   </section>
 
-  <!-- Testimonios -->
-  <section class="section" id="testimonios">
+  <!-- Confianza / Respaldo -->
+  <section class="section" id="confianza">
     <div class="container">
       <div class="section__head">
-        <span class="section__eyebrow">Testimonios</span>
-        <h2 class="section__title">Lo que dicen nuestros inversores</h2>
-        <p class="section__sub">Personas reales que ya protegen su patrimonio con nosotros</p>
+        <span class="section__eyebrow">Respaldo y transparencia</span>
+        <h2 class="section__title">Quién está detrás de tu metal</h2>
+        <p class="section__sub">KepaFinanzas es colaborador oficial de AUVESTA Edelmetalle AG, sociedad anónima alemana especializada en metales preciosos.</p>
       </div>
-      <div class="grid grid--3">
-        <article class="card testimonial">
-          <div class="testimonial__stars">⭐⭐⭐⭐⭐</div>
-          <p class="testimonial__text">"Llevaba años con el dinero en el banco perdiendo valor. Desde que empecé, por fin veo mi patrimonio crecer. Y lo mejor: es MÍO de verdad."</p>
-          <div class="testimonial__author"><strong>María G.</strong><span>Empresaria · Madrid · 8 meses</span></div>
-        </article>
-        <article class="card testimonial">
-          <div class="testimonial__stars">⭐⭐⭐⭐⭐</div>
-          <p class="testimonial__text">"Pensé que era para ricos. Pero empecé con 50€/mes y ya tengo más de 800€ en oro. La sensación de tener un lingote con tu nombre es increíble."</p>
-          <div class="testimonial__author"><strong>Javier R.</strong><span>Autónomo · Barcelona · 14 meses</span></div>
-        </article>
-        <article class="card testimonial">
-          <div class="testimonial__stars">⭐⭐⭐⭐⭐</div>
-          <p class="testimonial__text">"Lo abrí para mis hijos. Cada mes pongo 25€ para cada uno. Cuando cumplan 18 tendrán un colchón de oro que ningún banco les puede dar."</p>
-          <div class="testimonial__author"><strong>Laura P.</strong><span>Madre de 2 · Bilbao · 10 meses</span></div>
-        </article>
+      <div class="trust__stats">
+        <div class="trust__stat"><strong>2009</strong><span>Año de fundación en Alemania</span></div>
+        <div class="trust__stat"><strong>+200.000</strong><span>Inversores en 134 países</span></div>
+        <div class="trust__stat"><strong>Trimestral</strong><span>Auditoría por inspectores independientes</span></div>
+        <div class="trust__stat"><strong>100%</strong><span>Garantía de recompra del metal custodiado</span></div>
+      </div>
+      <div class="trust__extra">
+        <p>El inventario de la bóveda se publica online, el metal queda registrado a tu nombre con trazabilidad, y puedes vender en cualquier momento sin permanencia ni penalización. La relación contractual se formaliza directamente con AUVESTA, con la regulación mercantil alemana.</p>
       </div>
     </div>
   </section>
@@ -302,23 +303,74 @@
       <div class="section__head">
         <span class="section__eyebrow">Simulador</span>
         <h2 class="section__title">Calculadora de Ahorro en Oro</h2>
-        <p class="section__sub">Descubre cuánto podrías tener en el futuro</p>
+        <p class="section__sub">Simula un escenario de ahorro periódico. Es una hipótesis, no una promesa.</p>
       </div>
       <div class="calc">
         <div class="calc__inputs">
-          <div class="calc__field"><label>Ahorro mensual (€)</label><input type="range" id="calcMonthly" min="25" max="1000" value="100" step="25"><span class="calc__val" id="calcMonthlyVal">100€/mes</span></div>
-          <div class="calc__field"><label>Años</label><input type="range" id="calcYears" min="1" max="20" value="5" step="1"><span class="calc__val" id="calcYearsVal">5 años</span></div>
-          <div class="calc__field"><label>Crecimiento anual (%)</label><input type="range" id="calcGrowth" min="5" max="25" value="15" step="1"><span class="calc__val" id="calcGrowthVal">15%</span></div>
+          <div class="calc__field"><label for="calcMonthly">Ahorro mensual (€)</label><input type="range" id="calcMonthly" min="25" max="1000" value="100" step="25"><span class="calc__val" id="calcMonthlyVal">100€/mes</span></div>
+          <div class="calc__field"><label for="calcYears">Años</label><input type="range" id="calcYears" min="1" max="20" value="5" step="1"><span class="calc__val" id="calcYearsVal">5 años</span></div>
+          <div class="calc__field"><label for="calcGrowth">Crecimiento anual estimado (%)</label><input type="range" id="calcGrowth" min="0" max="20" value="8" step="1"><span class="calc__val" id="calcGrowthVal">8%</span></div>
         </div>
         <div class="calc__results">
           <div class="calc__result"><span>Total invertido</span><strong id="calcInvested">6.000€</strong></div>
-          <div class="calc__result calc__result--gold"><span>Valor estimado</span><strong id="calcValue">8.965€</strong></div>
-          <div class="calc__result calc__result--green"><span>Beneficio</span><strong id="calcProfit">+2.965€</strong></div>
+          <div class="calc__result calc__result--gold"><span>Valor estimado</span><strong id="calcValue">–</strong></div>
+          <div class="calc__result calc__result--green"><span>Diferencia</span><strong id="calcProfit">–</strong></div>
         </div>
-        <p class="calc__note">*Estimación con interés compuesto. Rendimiento pasado no garantiza futuro.</p>
+        <p class="calc__note">*Simulación con interés compuesto sobre el porcentaje que tú elijas. El precio del oro puede subir o bajar: rendimientos pasados no garantizan resultados futuros.</p>
       </div>
     </div>
   </section>
+
+  <!-- Preguntas frecuentes -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__eyebrow">Preguntas frecuentes</span>
+        <h2 class="section__title">Resolvemos tus dudas</h2>
+        <p class="section__sub">Las preguntas que más nos hacen antes de empezar.</p>
+      </div>
+      <div class="faq">
+        <details class="faq__item">
+          <summary>¿Con cuánto dinero puedo empezar?</summary>
+          <p>El plan de entrada (S-3) tiene una prima de 300 € y un pago inicial de 350 €. A partir de ahí, tú decides cuánto y cuándo aportar: no hay cuotas obligatorias ni permanencia.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿El oro es realmente mío?</summary>
+          <p>Sí. Compras metal físico (oro 9999 y plata 999) que queda registrado a tu nombre con trazabilidad. No es un producto financiero "sobre papel": es tu lingote en una bóveda.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Puedo vender cuando quiera?</summary>
+          <p>Sí. Puedes vender online en cualquier momento a precio de mercado, sin plazos ni penalizaciones, y existe garantía de recompra para el metal custodiado. El importe se transfiere a tu cuenta bancaria.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Pueden enviarme el metal a casa?</summary>
+          <p>Sí, puedes solicitar la entrega física desde 1 g de oro o 50 g de plata, con envío asegurado y seguimiento. También puedes dejarlo en custodia, que es la opción más segura.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Qué impuestos tiene el oro en España?</summary>
+          <p>El oro de inversión está exento de IVA en la UE. Solo tributas cuando vendes con beneficio (ganancia patrimonial en el IRPF). Cada situación es distinta: para tu caso concreto, consulta con un asesor fiscal.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Y si el precio del oro baja?</summary>
+          <p>Puede bajar: ningún activo sube siempre. El oro se utiliza como protección de patrimonio a largo plazo, no para especular a corto. Por eso recomendamos aportaciones periódicas y horizonte de años, no de semanas.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Datos estructurados FAQ para Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "¿Con cuánto dinero puedo empezar?", "acceptedAnswer": {"@type": "Answer", "text": "El plan de entrada (S-3) tiene una prima de 300 € y un pago inicial de 350 €. No hay cuotas obligatorias ni permanencia."}},
+      {"@type": "Question", "name": "¿El oro es realmente mío?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Compras metal físico (oro 9999 y plata 999) registrado a tu nombre con trazabilidad."}},
+      {"@type": "Question", "name": "¿Puedo vender cuando quiera?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, puedes vender online en cualquier momento a precio de mercado, sin plazos ni penalizaciones, con garantía de recompra."}},
+      {"@type": "Question", "name": "¿Qué impuestos tiene el oro en España?", "acceptedAnswer": {"@type": "Answer", "text": "El oro de inversión está exento de IVA en la UE. Solo tributas cuando vendes con beneficio. Consulta tu caso con un asesor fiscal."}}
+    ]
+  }
+  </script>
 
   <!-- CTA -->
   <section class="cta">
@@ -358,17 +410,24 @@
         <div class="field">
           <label for="interes">Me interesa</label>
           <select id="interes" name="interes">
-            <option value="invertir">Invertir en metales</option>
-            <option value="partner">Ser partner (comisiones en oro)</option>
-            <option value="info">Solo información</option>
+            <option value="Invertir en metales">Invertir en metales</option>
+            <option value="Ser partner (comisiones en oro)">Ser partner (comisiones en oro)</option>
+            <option value="Solo información">Solo información</option>
           </select>
         </div>
         <div class="field">
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos qué necesitas..." required></textarea>
         </div>
-        <button type="submit" class="btn btn--gold btn--block">Enviar mensaje</button>
+        <div class="field field--check">
+          <label class="check">
+            <input type="checkbox" id="privacidad" name="privacidad" required />
+            <span>He leído y acepto la <a href="legal.html#privacidad" target="_blank" rel="noopener">política de privacidad</a>.</span>
+          </label>
+        </div>
+        <button type="submit" class="btn btn--gold btn--block">Enviar por WhatsApp</button>
         <p class="form__feedback" id="formFeedback" role="status"></p>
+        <p class="form__hint">Al pulsar el botón se abrirá WhatsApp con tu mensaje ya preparado. No guardamos tus datos en ningún servidor.</p>
       </form>
     </div>
   </section>
@@ -390,13 +449,15 @@
           <li><a href="#planes">Planes</a></li>
           <li><a href="#invertir">Invertir</a></li>
           <li><a href="#partner">Partner</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Información</h4>
+        <h4>Legal</h4>
         <ul>
-          <li><a href="#custodia">Custodia segura</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="legal.html">Aviso legal</a></li>
+          <li><a href="legal.html#privacidad">Política de privacidad</a></li>
+          <li><a href="legal.html#cookies">Cookies</a></li>
         </ul>
       </div>
       <div class="footer__col">
@@ -407,7 +468,7 @@
     <div class="footer__bottom">
       <div class="container">
         <p>&copy; <span id="year"></span> KepaFinanzas. Todos los derechos reservados.</p>
-        <p class="footer__disclaimer">La inversión en metales preciosos conlleva riesgos. La información de esta web no constituye asesoramiento financiero.</p>
+        <p class="footer__disclaimer">KepaFinanzas actúa como colaborador comercial independiente de AUVESTA Edelmetalle AG. La inversión en metales preciosos conlleva riesgos: el precio puede subir o bajar y las rentabilidades pasadas no garantizan resultados futuros. La información de esta web no constituye asesoramiento financiero, fiscal ni legal.</p>
       </div>
     </div>
   </footer>
@@ -447,25 +508,7 @@
   <!-- Botón volver arriba -->
   <button class="to-top" id="toTop" aria-label="Volver arriba" title="Volver arriba">&#8593;</button>
 
-  <!-- Social Proof -->
-  <div class="social-proof" id="socialProof">
-    <span class="social-proof__icon">🥇</span>
-    <div class="social-proof__text"><strong id="spText">Alguien de Madrid acaba de pedir info</strong><span id="spTime">Hace 2 min</span></div>
-  </div>
-
   <script src="preguntas.js"></script>
   <script src="script.js"></script>
-  <!-- Calculadora + Social Proof -->
-  <script>
-  // Calculadora
-  const cM=document.getElementById('calcMonthly'),cY=document.getElementById('calcYears'),cG=document.getElementById('calcGrowth');
-  function updateCalc(){const m=+cM.value,y=+cY.value,g=+cG.value/100;document.getElementById('calcMonthlyVal').textContent=m+'€/mes';document.getElementById('calcYearsVal').textContent=y+(y===1?' año':' años');document.getElementById('calcGrowthVal').textContent=(g*100)+'%';const inv=m*12*y;const mr=g/12;let fv=0;for(let i=0;i<y*12;i++)fv=(fv+m)*(1+mr);const pr=fv-inv;document.getElementById('calcInvested').textContent=inv.toLocaleString('es-ES')+'€';document.getElementById('calcValue').textContent=Math.round(fv).toLocaleString('es-ES')+'€';document.getElementById('calcProfit').textContent='+'+Math.round(pr).toLocaleString('es-ES')+'€';}
-  cM.addEventListener('input',updateCalc);cY.addEventListener('input',updateCalc);cG.addEventListener('input',updateCalc);updateCalc();
-
-  // Social Proof
-  const sps=[{t:'Alguien de Madrid acaba de pedir info',d:'Hace 2 min'},{t:'Una persona de Barcelona se ha registrado',d:'Hace 5 min'},{t:'3 personas están viendo esta página',d:'Ahora'},{t:'Alguien de Bilbao ha solicitado la guía',d:'Hace 8 min'},{t:'Nuevo lead desde Instagram',d:'Hace 3 min'},{t:'Alguien de Valencia quiere saber más',d:'Hace 12 min'}];
-  let spI=0;function showSP(){const sp=document.getElementById('socialProof');const d=sps[spI%sps.length];document.getElementById('spText').textContent=d.t;document.getElementById('spTime').textContent=d.d;sp.classList.add('show');setTimeout(()=>sp.classList.remove('show'),4000);spI++;}
-  setTimeout(showSP,12000);setInterval(showSP,30000);
-  </script>
 </body>
 </html>
